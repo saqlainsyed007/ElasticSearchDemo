@@ -1,0 +1,7 @@
+.auto-complete-demo-container input{
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}

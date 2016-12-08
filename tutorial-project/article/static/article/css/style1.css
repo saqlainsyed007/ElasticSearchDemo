@@ -1,0 +1,107 @@
+body
+{
+	background-image:url("Grey_Background.jpg");
+	background-size:cover;
+}
+img.x1
+{
+	position:absolute;
+	top: 20px;
+	left: 20px;
+}
+img.x2
+{
+	position:absolute;
+	top: 20px;
+	right: 20px;
+}
+div.nav
+{
+	background-color: yellow;
+	border: solid 4px;
+	border-radius: 10px;
+	overflow-y: scroll;
+	width: 180px;
+	height: 450px;
+}
+div.main
+{
+	background-color: green;
+	border: solid 4px;
+	border-radius: 10px;
+	width: 1080px;
+	height: 600px;
+	overflow-y: scroll;
+}
+div.ext
+{
+	width: 95%;
+	background-color: blue;
+	border: solid 4px;
+	border-radius: 10px;
+	overflow-x: scroll;
+	margin: auto;
+}
+table.main
+{
+	margin-left: 3% ;
+}
+table.content
+{
+	position: relative;
+	margin-top: 10px;
+}
+td
+{
+	font-family: "comic sans ms";
+	text-align: center;
+}
+td.name
+{
+	color: orange;
+	font-family: "comic sans ms";
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 15pt;
+}
+p.tagline
+{
+	color: orange;
+	font-family: ;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 20pt;
+}
+p.heading
+{
+	font-family: "comic sans ms";
+	font-weight: bold;
+	font-size: 18pt;
+}
+p.desc
+{
+	font-family: "comic sans ms";
+	font-size: 14pt;
+	text-align: justify;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+a.x
+{
+	color: white;
+}
+iframe.main
+{
+	margin: auto;
+	width: 968px;
+	height: 400px;
+	overflow: scroll;
+}
+a.home
+{
+	color: white;
+	margin-left: 3%;
+	padding-left: 20px;
+}

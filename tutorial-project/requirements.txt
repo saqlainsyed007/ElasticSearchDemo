@@ -1,0 +1,44 @@
+django-cms<3.5
+djangocms-admin-style>=1.2,<1.3
+django-treebeard>=4.0,<5.0
+djangocms-link>=1.8
+djangocms-style>=1.7
+djangocms-googlemap>=0.5
+djangocms-snippet>=1.9
+djangocms-video>=2.0
+djangocms-column>=1.6
+django-filer>=1.2
+cmsplugin-filer>=1.1
+Django<1.9
+pytz
+django-classy-tags>=0.7
+html5lib>=0.999999,<0.99999999
+Pillow>=3.0
+django-sekizai>=0.9
+django-select2<5.0six
+
+psycopg2==2.6
+six==1.9.0
+wsgiref==0.1.2
+django-taggit==0.12.3
+django-ckeditor==4.4.7
+django_extensions==1.5.2
+celery==3.1.17
+
+django-image-cropping==1.0.1
+django-import-export==0.2.8
+
+elasticsearch==1.6.0
+
+# FIX AttributeError: 'CMSPlugin' object has no attribute 'get_deferred_fields'
+django-mptt>=0.7.1,<0.8
+
+# Added Jan 25, 2016
+easy-thumbnails==2.2
+django-haystack==2.3.1
+django-localflavor==1.1
+elasticsearch-dsl==0.0.3
+
+# captcha Add Apr 19,2016
+django-simple-captcha==0.5.1
+django-environ==0.4.0

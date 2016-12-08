@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>KTM Article</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'article/css/style1.css' %}" />
+	</head>
+	<body>
+		<img src="/static/article/images/KTM_Logo.jpg" height=50 width=100 class="x1"/>
+		<img src="/static/article/images/Ready_To_Race.png" height=50 width=100 class="x2"/>
+		<!--<audio src="/static/article/audio/Audio.mp3" autoplay></audio>-->
+		<br/>
+		<p class="tagline" align="center">Compress Distance and Stretch Time !!!</p>
+		<a href="{% url 'article:index' %}" class="home">Home</a>
+		<table cellspacing=20 class="main">
+			<tr valign="top">
+				<th>
+					<div class="nav">
+						{% if article_list %}
+							<table>
+								{% for a in article_list %}
+									<tr>
+										<th><a href="{% url 'article:content' a.article_name %}"><img src="{{a.image.url}}" alt={{ a.image_name }} height="50" width="100"/></a></th>
+									</tr>
+									<tr>
+										<td><a href="{% url 'article:content' a.article_name %}">{{a.article_name}}</a></td>
+									</tr>
+								{% endfor %}
+							</table>
+						{% else %}
+							<p>No articles are available.</p>
+						{% endif %}
+					</div>
+				</th>
+				<th>
+					<div class="main">
+						{% block content %}
+							<table cellspacing=10 class="content">
+								{% if article_list %}
+									{% for a in article_list %}
+										<tr>
+											<td class="name"><a href="{% url 'article:content' a.article_name %}">{{a.article_name}}</a></td>
+											<td><img src="{{a.image.url}}" alt="can't display" height="50" width="100"/></td>
+											<td class="value">{{a.article_desc|truncatewords:20}}</td>
+										</tr>
+									{% endfor %}
+								{% else %}
+									<p>No Artilces available</p>
+								{% endif %}
+							</table>
+						{% endblock %}
+					</div>
+				</th>
+			</tr>
+		</table>
+	</body>
+</html>
